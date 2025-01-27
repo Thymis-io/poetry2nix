@@ -36,8 +36,8 @@ let
               # NOTE: We have to use a non-overlayed Python here because otherwise we run into an infinite recursion
               # because building of tomlkit and its dependencies also use these hooks.
               # pythonPath = nonOverlayedPython.pkgs.makePythonPath [ nonOverlayedPython ];
-              inherit pythonSitePackages;
-              inherit pythonInterpreter;
+              pythonPath = nonOverlayedPython.pkgs.makePythonPath [ nonOverlayedPython ];
+              pythonInterpreter = nonOverlayedPython.interpreter;
               inherit pyprojectPatchScript;
               inherit fields;
               inherit kind;
