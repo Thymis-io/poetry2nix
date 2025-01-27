@@ -20748,7 +20748,7 @@
     "setuptools"
   ],
   "pyyaml": [
-    "cython_0",
+    "cython",
     "setuptools"
   ],
   "pyyaml-env-tag": [
@@ -26651,7 +26651,7 @@
     "setuptools"
   ],
   "uvloop": [
-    "cython_0",
+    "cython",
     "setuptools"
   ],
   "uwsgidecorators": [
